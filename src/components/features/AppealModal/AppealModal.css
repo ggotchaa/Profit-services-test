@@ -142,6 +142,63 @@
   font-weight: 500;
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+  .appeal-modal .ant-modal-header {
+    padding: 20px;
+  }
+  
+  .modal-id {
+    font-size: 18px;
+  }
+  
+  .header-icon {
+    font-size: 18px;
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  .info-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  
+  .info-card {
+    padding: 14px;
+  }
+  
+  .info-icon {
+    font-size: 18px;
+  }
+  
+  .info-label {
+    font-size: 11px;
+  }
+  
+  .info-value {
+    font-size: 14px;
+  }
+  
+  .section-title {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+  
+  .description-section {
+    padding: 16px;
+  }
+  
+  .description-text {
+    font-size: 14px;
+  }
+  
+  .custom-divider {
+    margin: 20px 0;
+  }
+}
+
+
 @media (max-width: 768px) {
   .appeal-modal .ant-modal-content {
     margin: 16px;

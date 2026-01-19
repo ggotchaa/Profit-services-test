@@ -203,6 +203,60 @@
   flex: 1;
 }
 
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .statistics-page {
+    gap: 20px;
+  }
+  
+  .statistics-page .page-title {
+    font-size: 26px !important;
+  }
+  
+  .statistics-page .page-subtitle {
+    font-size: 14px;
+  }
+  
+  .overview-header {
+    margin-bottom: 20px;
+  }
+  
+  .overview-label {
+    font-size: 15px;
+  }
+  
+  .efficiency-stats {
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .efficiency-value {
+    font-size: 28px;
+  }
+  
+  .category-item {
+    gap: 20px;
+    padding: 14px;
+  }
+  
+  .category-info {
+    min-width: 200px;
+  }
+  
+  .category-name {
+    font-size: 14px;
+  }
+  
+  .general-stat-item {
+    padding: 10px 14px;
+  }
+  
+  .general-stat-value {
+    font-size: 16px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .efficiency-stats {
     flex-direction: column;

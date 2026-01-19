@@ -39,6 +39,27 @@
   height: 100%;
 }
 
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .map-page {
+    gap: 20px;
+    height: calc(100vh - 180px);
+  }
+  
+  .map-page .page-title {
+    font-size: 26px !important;
+  }
+  
+  .map-page .page-subtitle {
+    font-size: 14px;
+  }
+  
+  .map-container-full {
+    min-height: 450px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .map-page {
     height: auto;

@@ -99,6 +99,52 @@
   box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
 }
 
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .reports-page {
+    gap: 20px;
+  }
+  
+  .reports-page .page-title {
+    font-size: 26px !important;
+  }
+  
+  .reports-page .page-subtitle {
+    font-size: 14px;
+  }
+  
+  .reports-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .report-card {
+    padding: 28px 20px;
+  }
+  
+  .report-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 28px;
+    border-radius: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .report-name {
+    font-size: 16px;
+  }
+  
+  .report-description {
+    font-size: 13px;
+  }
+  
+  .report-button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .reports-grid {
     grid-template-columns: 1fr;

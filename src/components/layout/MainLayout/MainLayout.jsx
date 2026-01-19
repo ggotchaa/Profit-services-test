@@ -7,7 +7,7 @@ import './MainLayout.css';
 
 const { Content } = Layout;
 
-const MainLayout = ({ children, activeKey = 'dashboard', onMenuClick }) => {
+const MainLayout = ({ children }) => {
   const [collapsed, setCollapsed] = useState(false);
 
   const handleToggle = () => {
@@ -16,11 +16,7 @@ const MainLayout = ({ children, activeKey = 'dashboard', onMenuClick }) => {
 
   return (
     <Layout className="main-layout">
-      <Sidebar 
-        collapsed={collapsed} 
-        activeKey={activeKey}
-        onMenuClick={onMenuClick}
-      />
+      <Sidebar collapsed={collapsed} />
       <Layout className="content-layout">
         <Header 
           collapsed={collapsed} 

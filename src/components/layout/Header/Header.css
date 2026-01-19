@@ -91,6 +91,47 @@
   color: #1a202c;
 }
 
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .app-header {
+    padding: 0 20px;
+    height: 60px;
+  }
+  
+  .header-left {
+    gap: 12px;
+  }
+  
+  .collapse-button {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .header-title {
+    font-size: 16px;
+  }
+  
+  .header-right {
+    gap: 16px;
+  }
+  
+  .header-icon-button {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .user-dropdown {
+    padding: 6px 10px;
+  }
+  
+  .user-name {
+    font-size: 14px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .app-header {
     padding: 0 16px;

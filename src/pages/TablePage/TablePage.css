@@ -28,3 +28,29 @@
   color: #718096;
   font-size: 15px;
 }
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .table-page {
+    gap: 20px;
+  }
+  
+  .table-page .page-title {
+    font-size: 26px !important;
+  }
+  
+  .table-page .page-subtitle {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .table-page {
+    gap: 16px;
+  }
+  
+  .table-page .page-title {
+    font-size: 24px !important;
+  }
+}

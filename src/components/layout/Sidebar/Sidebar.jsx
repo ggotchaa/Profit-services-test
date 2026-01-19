@@ -1,4 +1,5 @@
 import { Layout, Menu } from 'antd';
+import { NavLink, useLocation } from 'react-router-dom';
 import { 
   DashboardOutlined, 
   TableOutlined, 
@@ -10,32 +11,45 @@ import './Sidebar.css';
 
 const { Sider } = Layout;
 
-const Sidebar = ({ collapsed, activeKey, onMenuClick }) => {
+const Sidebar = ({ collapsed }) => {
+  const location = useLocation();
+  
+  // Determine active key from current path
+  const getActiveKey = () => {
+    const path = location.pathname;
+    if (path === '/') return 'dashboard';
+    if (path === '/table') return 'table';
+    if (path === '/map') return 'map';
+    if (path === '/statistics') return 'statistics';
+    if (path === '/reports') return 'reports';
+    return 'dashboard';
+  };
+
   const menuItems = [
     {
       key: 'dashboard',
       icon: <DashboardOutlined />,
-      label: 'Главная',
+      label: <NavLink to="/">Главная</NavLink>,
     },
     {
       key: 'table',
       icon: <TableOutlined />,
-      label: 'Таблица обращений',
+      label: <NavLink to="/table">Таблица обращений</NavLink>,
     },
     {
       key: 'map',
       icon: <EnvironmentOutlined />,
-      label: 'Карта',
+      label: <NavLink to="/map">Карта</NavLink>,
     },
     {
       key: 'statistics',
       icon: <BarChartOutlined />,
-      label: 'Статистика',
+      label: <NavLink to="/statistics">Статистика</NavLink>,
     },
     {
       key: 'reports',
       icon: <FileTextOutlined />,
-      label: 'Отчёты',
+      label: <NavLink to="/reports">Отчёты</NavLink>,
     },
   ];
 
@@ -57,10 +71,9 @@ const Sidebar = ({ collapsed, activeKey, onMenuClick }) => {
       
       <Menu
         mode="inline"
-        selectedKeys={[activeKey]}
+        selectedKeys={[getActiveKey()]}
         items={menuItems}
         className="sidebar-menu"
-        onClick={({ key }) => onMenuClick(key)}
       />
       
       <div className="sidebar-footer">

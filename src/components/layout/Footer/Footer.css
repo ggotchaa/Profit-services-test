@@ -83,6 +83,40 @@
   transform: translateY(-2px);
 }
 
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .app-footer {
+    padding: 20px 24px;
+  }
+  
+  .footer-content {
+    gap: 12px;
+  }
+  
+  .footer-copyright {
+    font-size: 13px;
+  }
+  
+  .footer-made-with {
+    font-size: 12px;
+  }
+  
+  .footer-right {
+    gap: 24px;
+  }
+  
+  .footer-link {
+    font-size: 12px;
+  }
+  
+  .social-link {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .app-footer {
     padding: 20px;
