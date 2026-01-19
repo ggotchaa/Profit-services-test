@@ -1,0 +1,44 @@
+.custom-button {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-button--primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.custom-button--primary:hover {
+  background: linear-gradient(135deg, #5a6fd6 0%, #6a4190 100%);
+}
+
+.custom-button--secondary {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e2e8f0;
+  color: #4a5568;
+}
+
+.custom-button--secondary:hover {
+  background: #f7fafc;
+  border-color: #cbd5e0;
+}
+
+.custom-button--ghost {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: #667eea;
+}
+
+.custom-button--ghost:hover {
+  background: rgba(102, 126, 234, 0.1);
+  box-shadow: none;
+  transform: none;
+}

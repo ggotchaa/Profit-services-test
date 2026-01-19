@@ -1,0 +1,30 @@
+.table-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.table-page .page-header {
+  margin-bottom: 8px;
+}
+
+.table-page .header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.table-page .page-title {
+  margin: 0 !important;
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  background: linear-gradient(135deg, #1a202c 0%, #4a5568 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.table-page .page-subtitle {
+  color: #718096;
+  font-size: 15px;
+}
